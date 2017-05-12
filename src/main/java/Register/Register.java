@@ -35,8 +35,8 @@ public class Register extends HttpServlet {
             out.println("location='index.jsp';");
             out.println("</script>");
 
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new ServletException();
         }
     }
 

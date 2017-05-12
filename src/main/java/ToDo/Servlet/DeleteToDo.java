@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 
 @WebServlet(name = "DeleteToDo")
@@ -45,10 +46,10 @@ public class DeleteToDo extends HttpServlet {
                     dao.deleteTodo(delete.getID());
 
                 } catch (Exception e) {
-                    throw new ServletException(e);
+                    throw new SQLException(e);
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                throw new ServletException();
             }
         }
     }

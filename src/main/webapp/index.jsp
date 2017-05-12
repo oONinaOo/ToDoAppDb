@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>TodoApp</title>
@@ -6,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <div id="logintext" class="logintext">Login</div>
-<div id="login" class="addTodo">
+<div id="login" class="login">
 <form action="login" method="post">
         <span class="username">Username: </span><input type="text" size = "10" placeholder="Username" name="logusername">
        <span class="password">Password: </span><input type="password" placeholder="Password" name="logpw" size = "10">
